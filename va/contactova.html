@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museo de Informática EPS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contacto">
+
+    <div class="top-bar">
+        <div class="contenedor-header">
+            <div class="contenido-header">
+                <div class="logo-header">
+                    <img src="https://www.profesionalsorolla.es/wp-content/uploads/2021/05/logo_ense_profesio_sorolla1.jpg" alt="Logo del museu" />
+                </div>           
+            </div>
+        </div>
+        <div class="texto-header">
+            <div>
+                <span class="oscuro">M</span><span class="claro">u</span><span class="oscuro">s</span><span class="claro">e</span><span class="oscuro">u</span>
+                <span> </span>
+                <span class="claro">d</span><span class="oscuro">'</span><span class="claro">I</span><span class="oscuro">n</span><span class="claro">f</span><span class="oscuro">o</span><span class="claro">r</span><span class="oscuro">m</span><span class="claro">à</span><span class="oscuro">t</span><span class="claro">i</span><span class="oscuro">c</span><span class="claro">a</span>
+                <span> </span>
+                <span class="oscuro">E</span><span class="claro">P</span><span class="oscuro">S</span>
+            </div>
+        </div>
+        <div class="info-derecha">   
+            <div class="buscar">
+                <input id="search-input" type="text" placeholder="Cerca" />
+                <button id="clear-btn" style="display: none">❌</button>
+                <button id="search-btn">Cercar</button>
+            </div> 
+        <div class="idiomas">
+            Idioma:
+                <img src="https://flagcdn.com/16x12/es.png" alt="Espanyol">
+                <img src="https://www.bandiere.it/uploads/2016-6-6/1200-0/valencia.jpg" alt="Valencià">
+                <img src="https://flagcdn.com/16x12/gb.png" alt="Anglès">
+        </div>
+        <div class="redes-sociales">
+            Segueix-nos:
+            <a href="https://www.facebook.com/ProfesionalSorolla">
+                <img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" class="img-icon">
+            </a>
+            <a href="https://www.instagram.com/profesionalsorolla/">
+                <img src="https://c0.klipartz.com/pngpicture/722/1011/gratis-png-icono-de-logo-logo-de-instagram-logo-de-instagram.png" class="img-icon">
+            </a>
+        </div>
+    </div>
+ </div>
+
+    <nav class="top-nav">
+      <a href="iniciova.html">Inici</a>
+      <a href="historiava.html">Història</a>
+      <a href="visitava.html">Visita global</a>
+      <a href="categoriesva.html">Categories</a>
+      <a href="cuadrosva.html">Quadres</a>
+      <a href="contactova.html">Contacte</a>
+    </nav>
+
+    <div id="form-success">
+        Formulari enviat correctament.
+        
+    </div>
+
+    <header>
+        <h1>Contacte</h1>
+        <p>Posa't en contacte amb nosaltres per a més informació.</p>
+    </header>
+    
+    <main class="contacto">
+        <section class="formulario">
+            <form id="contact-form">
+                <label for="nombre">Nom:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="mensaje">Missatge:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+              
+                <button type="submit">Enviar</button>
+                <p id="form-success" style="display: none;">Formulario enviado correctamente.</p>
+            </form>  
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <span class="pie">
+                <b>Nom: </b>Grupo Sorolla Educació<br>
+                <b>Ubicació: </b>Carr. de Malilla, 47, Quatre Carreres, 46026 València
+            </span>
+            <img class="logo" src="logoeps.png" alt="Logo EPS" />
+        </div>
+    </footer>
+      
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const form = document.getElementById('contact-form');
+          const successMsg = document.getElementById('form-success');
+    
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            successMsg.style.display = 'block';
+            successMsg.classList.remove('hide');
+            form.reset();
+    
+            setTimeout(() => {
+              successMsg.classList.add('hide');
+              setTimeout(() => {
+                successMsg.style.display = 'none';
+              }, 600);
+            }, 4000);
+          });
+        });
+    </script>
+
+    <script src="scriptva.js"></script>
+      
+</body>
+</html>

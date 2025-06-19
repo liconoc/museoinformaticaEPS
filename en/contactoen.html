@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museo de Informática EPS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contacto">
+
+    <div class="top-bar">
+        <div class="contenedor-header">
+            <div class="contenido-header">
+                <div class="logo-header">
+                    <img src="https://www.profesionalsorolla.es/wp-content/uploads/2021/05/logo_ense_profesio_sorolla1.jpg" alt="Museum logo" />
+                </div>           
+            </div>
+        </div>
+        <div class="texto-header">
+            <div>
+                <span class="oscuro">C</span><span class="claro">o</span><span class="oscuro">m</span><span class="claro">p</span><span class="oscuro">u</span><span class="claro">t</span><span class="oscuro">e</span><span class="claro">r</span>
+                <span> </span>
+                <span class="claro">M</span><span class="oscuro">u</span><span class="claro">s</span><span class="oscuro">e</span><span class="claro">u</span><span class="oscuro">m</span>
+                <span> </span>
+                <span class="oscuro">E</span><span class="claro">P</span><span class="oscuro">S</span>
+            </div>
+        </div>
+        <div class="info-derecha">   
+            <div class="buscar">
+                <input id="search-input" type="text" placeholder="Search" />
+                <button id="clear-btn" style="display: none">❌</button>
+                <button id="search-btn">Search</button>
+            </div> 
+        <div class="idiomas">
+            Language:
+                <img src="https://flagcdn.com/16x12/es.png" alt="Spanish">
+                <img src="https://www.bandiere.it/uploads/2016-6-6/1200-0/valencia.jpg" alt="Valencian">
+                <img src="https://flagcdn.com/16x12/gb.png" alt="English">
+        </div>
+        <div class="redes-sociales">
+            Follow us:
+            <a href="https://www.facebook.com/ProfesionalSorolla">
+                <img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" class="img-icon">
+            </a>
+            <a href="https://www.instagram.com/profesionalsorolla/">
+                <img src="https://c0.klipartz.com/pngpicture/722/1011/gratis-png-icono-de-logo-logo-de-instagram-logo-de-instagram.png" class="img-icon">
+            </a>
+        </div>
+    </div>
+ </div>
+
+    <nav class="top-nav">
+        <a href="inicioen.html">Home</a>
+        <a href="historiaen.html">History</a>
+        <a href="visitaen.html">Global Visit</a>
+        <a href="categoriasen.html">Categories</a>
+        <a href="cuadrosen.html">Panels</a>
+        <a href="contactoen.html">Contact</a>
+    </nav>
+
+    <div id="form-success">
+        Form successfully submitted.
+        
+    </div>
+
+    <header>
+        <h1>Contact</h1>
+        <p>Get in touch with us for more information.</p>
+    </header>
+    
+    <main class="contacto">
+        <section class="formulario">
+            <form id="contact-form">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="mensaje">Message:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+              
+                <button type="submit">Send</button>
+                <p id="form-success" style="display: none;">Formulario enviado correctamente.</p>
+            </form>  
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <span class="pie">
+                <b>Name: </b>Grupo Sorolla Education<br>
+                <b>Location: </b>Carr. de Malilla, 47, Quatre Carreres, 46026 Valencia
+            </span>
+            <img class="logo" src="logoeps.png" alt="EPS Logo" />
+        </div>
+    </footer>
+      
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const form = document.getElementById('contact-form');
+          const successMsg = document.getElementById('form-success');
+    
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            successMsg.style.display = 'block';
+            successMsg.classList.remove('hide');
+            form.reset();
+    
+            setTimeout(() => {
+              successMsg.classList.add('hide');
+              setTimeout(() => {
+                successMsg.style.display = 'none';
+              }, 600);
+            }, 4000);
+          });
+        });
+    </script>
+
+    <script src="scripten.js"></script>
+      
+</body>
+</html>

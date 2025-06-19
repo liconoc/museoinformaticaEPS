@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes | Museo QR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="fondo">
+
+    <div class="top-bar">
+        <div class="contenedor-header">
+            <!-- Agrupamos logo + texto -->
+            <div class="contenido-header">
+              <!-- Logo al inicio -->
+              <div class="logo-header">
+                <img src="https://www.profesionalsorolla.es/wp-content/uploads/2021/05/logo_ense_profesio_sorolla1.jpg" alt="Logo del museo" />
+              </div>           
+            </div>
+        </div>
+        <div class="texto-header">
+            <div>
+                <span class="oscuro">M</span><span class="claro">u</span><span class="oscuro">s</span><span class="claro">e</span><span class="oscuro">o</span>
+                <span> </span>
+                <span class="claro">d</span><span class="oscuro">e</span>
+                
+                <span> </span>
+                <span class="claro">i</span><span class="oscuro">n</span><span class="claro">f</span><span class="oscuro">o</span><span class="claro">r</span><span class="oscuro">m</span><span class="claro">á</span><span class="oscuro">t</span><span class="claro">i</span><span class="oscuro">c</span><span class="claro">a</span>
+                <span> </span>
+                <span class="oscuro">E</span><span class="claro">P</span><span class="oscuro">S</span>
+            </div>
+        </div>
+        <div class="info-derecha">   
+          <div class="buscar">
+              <input id="search-input" type="text" placeholder="Búsqueda" />
+              <button id="clear-btn" style="display: none">❌</button> <!-- Botón para borrar el texto -->
+              <button id="search-btn">Buscar</button> <!-- Botón para hacer la búsqueda -->
+          </div>
+            <div class="idiomas">
+                Idioma:
+                    <img
+                    src="https://flagcdn.com/16x12/es.png"
+                    srcset="https://flagcdn.com/32x24/es.png 2x,
+                    https://flagcdn.com/48x36/es.png 3x"
+                    width="16"
+                    height="12"
+                    alt="Spain">
+                    <img src="https://www.bandiere.it/uploads/2016-6-6/1200-0/valencia.jpg" alt="Valencià">
+                    <img
+                    src="https://flagcdn.com/16x12/gb.png"
+                    srcset="https://flagcdn.com/32x24/gb.png 2x,
+                    https://flagcdn.com/48x36/gb.png 3x"
+                    width="16"
+                    height="12"
+                    alt="United Kingdom">
+            </div>
+            <div class="redes-sociales">
+                Síguenos:
+                <a href="https://www.facebook.com/ProfesionalSorolla">
+                  <img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" class="img-icon">
+                </a>
+                <a href="https://www.instagram.com/profesionalsorolla/">
+                  <img src="https://c0.klipartz.com/pngpicture/722/1011/gratis-png-icono-de-logo-logo-de-instagram-logo-de-instagram.png" class="img-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="top-nav">
+            <a href="inicioes.html">Inicio</a>
+            <a href="historiaes.html">Historia</a>
+        </ul>  
+        <ul class="accordion-menu">
+            <li>
+                <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>Componentes
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="submenuItems">
+                    <li><a href="visitaes.html">Todos los componentes</a></li>
+                    <li><a href="categoriases.html">Categorías</a></li>
+                    <li><a href="cuadroses.html">Cuadros</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="contactoes.html">Contacto</a>   
+    </nav>
+
+    <main class="gallery">
+    <section class="categorias">
+      <h2 class="nombre">🧩 Memoria y Procesadores</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="ram.jpg" alt="RAM">
+            <p>Memorias</p>
+          </div>
+          <div class="back">
+            <p>Son dispositivos que guardan datos e instrucciones que usa una computadora.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="ram.jpg" alt="Memorias RAM">
+            <p>Memorias RAM</p>
+          </div>
+          <div class="back">
+            <p>Las memorias RAM ayudan a un mejor desempeño del sistema.</p>
+            <a href="memoriases.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/d2GCDBY6NBWMBXHP" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="procesador.webp" alt="Memorias RAM">
+            <p>Procesadores</p>
+          </div>
+          <div class="back">
+            <p>Los procesadores ejecutan instrucciones y controlan todo lo que hace la computadora.</p>
+            <a href="procesadoreses.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/d2GCDBY6NBWMBXHP" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">🧠 Placas base y disipador</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="placabase.webp" alt="RAM">
+            <p>Placa base</p>
+          </div>
+          <div class="back">
+            <p>Es el componente principal de una computadora.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="placabase.webp" alt="Memorias RAM">
+            <p>Placa base (tipos)</p>
+          </div>
+          <div class="back">
+            <p>Conecta todos los componentes de la computadora, como el procesador, la memoria y los periféricos, permitiendo que trabajen juntos.</p>
+            <a href="placabasees.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/vJ3dDLFRTp6Dp5qq?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="disipador.jpg" alt="Memorias RAM">
+            <p>Disipador</p>
+          </div>
+          <div class="back">
+            <p>Es un componente que ayuda a mantener el procesador o tarjeta gráfica a una temperatura segura, absorbiendo y dispersando el calor generado.</p>
+            <a href="disipadores.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/S9dnakLOaAVD8uUj?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">🎮 Tarjetas de expansión</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="tarjetasgraficas.jpg" alt="RAM">
+            <p>Tarjetas gráficas</p>
+          </div>
+          <div class="back">
+            <p>Procesan y renderizan las imágenes que ves en la pantalla, mejorando el rendimiento visual de la computadora, especialmente en juegos y aplicaciones de diseño.</p>
+            <a href="tarjetasgraficases.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/RMtXln6Yaor0y9Xx?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="tarjetared.jpg" alt="Memorias RAM">
+            <p>Tarjetas de red</p>
+          </div>
+          <div class="back">
+            <p>Permiten que la computadora se conecte a una red, ya sea local (LAN) o a Internet, facilitando la comunicación entre dispositivos.</p>
+            <a href="tarjetasredes.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/K5FPAtsGmXZEk7pE?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="tarjetaaudio.jpg" alt="Memorias RAM">
+            <p>Tarjetas de audio</p>
+          </div>
+          <div class="back">
+            <p>Procesan el sonido en la computadora, permitiendo reproducir y grabar audio con mejor calidad que la que ofrecen los chips integrados.</p>
+            <a href="tarjetasaudioes.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/K5FPAtsGmXZEk7pE?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">🌐 Conectividad y Redes</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="router.jpg" alt="RAM">
+            <p>Router</p>
+          </div>
+          <div class="back">
+            <p>Es un dispositivo que distribuye la conexión a Internet a varios dispositivos, ya sea por cable o por Wi-Fi.</p>
+            <a href="routeres.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/Tb1uIWSupREi4PIR?ref=Link&loc=mysways" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="modem.jpg" alt="Memorias RAM">
+            <p>Módem</p>
+          </div>
+          <div class="back">
+            <p>Convierte la señal de Internet de tu proveedor en una señal que la computadora o dispositivos puedan usar para conectarse a la red.</p>
+            <a href="modemes.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/JkQ0JY1v73HAQr6Q?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="adaptadorred.jpg" alt="Memorias RAM">
+            <p>Adaptador de red</p>
+          </div>
+          <div class="back">
+            <p>Permite a un dispositivo, como una computadora, conectarse a una red, ya sea mediante un cable (Ethernet) o de manera inalámbrica (Wi-Fi).</p>
+            <a href="tarjetasredes.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/JkQ0JY1v73HAQr6Q?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">📂 Almacenamiento</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="disquetes.jpg" alt="RAM">
+            <p>Disquetes</p>
+          </div>
+          <div class="back">
+            <p>Son un medio de almacenamiento portátil y magnético que se usaba para guardar archivos y programas en computadoras antiguas.</p>
+
+            <a href="https://sway.cloud.microsoft/JkQ0JY1v73HAQr6Q?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="almacenamiento.webp" alt="Memorias RAM">
+            <p>Almacenamiento</p>
+          </div>
+          <div class="back">
+            <p>Son los dispositivos y sistemas que se utilizan para guardar y recuperar datos.</p>
+            <a href="almacenamientoes.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/JkQ0JY1v73HAQr6Q?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="disqueter+" alt="Memorias RAM">
+            <p>Disquetera</p>
+          </div>
+          <div class="back">
+            <p>Es un dispositivo utilizado para leer y escribir datos en disquetes, un medio de almacenamiento magnético.</p>
+            <a href="disqueteraes.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/ntca1feClzlvYhkK?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">🔌 Periféricos y conectores</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="cables.jpg" alt="RAM">
+            <p>Cables</p>
+          </div>
+          <div class="back">
+            <p>Se utilizan para conectar diferentes dispositivos, como computadoras, impresoras, monitores y otros periféricos.</p>
+            <a href="cableses.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/HcbgZ10sB3JqM2MC?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="conectores.webp" alt="Memorias RAM">
+            <p>Conectores</p>
+          </div>
+          <div class="back">
+            <p>En informática y electrónica son piezas que permiten unir cables o dispositivos para transmitir señales eléctricas, de datos o de energía.</p>
+            <a href="conectoreses.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://sway.cloud.microsoft/HcbgZ10sB3JqM2MC?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="perifericos.jpg" alt="Memorias RAM">
+            <p>Periféricos</p>
+          </div>
+          <div class="back">
+            <p>Son dispositivos externos que se conectan a una computadora o sistema informático para ampliar o mejorar su funcionalidad.</p>
+            <a href="perifericoses.html" target="_blank" class="more-info">Tipos</a>
+            <a href="https://neu-www.sway.com/ja8VwrOFPDGGqhy9" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <span class="pie">
+            <b>Nombre: </b>Grupo Sorolla Educación<br>
+            <b>Ubicación: </b>Carr. de Malilla, 47, Quatre Carreres, 46026 Valencia
+        </span>
+        <img class="logo" src="logoeps.png" alt="Logo EPS" />
+    </div>
+  </footer>
+
+  <script src="scriptes.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes | Museo QR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fondo">
+
+    <div class="top-bar">
+        <div class="contenedor-header">
+            <div class="contenido-header">
+                <div class="logo-header">
+                    <img src="https://www.profesionalsorolla.es/wp-content/uploads/2021/05/logo_ense_profesio_sorolla1.jpg" alt="Museum logo" />
+                </div>           
+            </div>
+        </div>
+        <div class="texto-header">
+            <div>
+                <span class="oscuro">C</span><span class="claro">o</span><span class="oscuro">m</span><span class="claro">p</span><span class="oscuro">u</span><span class="claro">t</span><span class="oscuro">e</span><span class="claro">r</span>
+                <span> </span>
+                <span class="claro">M</span><span class="oscuro">u</span><span class="claro">s</span><span class="oscuro">e</span><span class="claro">u</span><span class="oscuro">m</span>
+                <span> </span>
+                <span class="oscuro">E</span><span class="claro">P</span><span class="oscuro">S</span>
+            </div>
+        </div>
+        <div class="info-derecha">   
+            <div class="buscar">
+                <input id="search-input" type="text" placeholder="Search" />
+                <button id="clear-btn" style="display: none">❌</button>
+                <button id="search-btn">Search</button>
+            </div> 
+        <div class="idiomas">
+            Language:
+                <img src="https://flagcdn.com/16x12/es.png" alt="Spanish">
+                <img src="https://www.bandiere.it/uploads/2016-6-6/1200-0/valencia.jpg" alt="Valencian">
+                <img src="https://flagcdn.com/16x12/gb.png" alt="English">
+        </div>
+        <div class="redes-sociales">
+            Follow us:
+            <a href="hhttps://www.facebook.com/ProfesionalSorolla">
+              <img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" class="img-icon">
+            </a>
+            <a href="https://www.instagram.com/profesionalsorolla/">
+              <img src="https://c0.klipartz.com/pngpicture/722/1011/gratis-png-icono-de-logo-logo-de-instagram-logo-de-instagram.png" class="img-icon">
+            </a>
+        </div>
+    </div>
+ </div>
+
+    <nav class="top-nav">
+        <a href="inicioen.html">Home</a>
+        <a href="historiaen.html">History</a>
+        <a href="visitaen.html">Global Visit</a>
+        <a href="categoriasen.html">Categories</a>
+        <a href="cuadrosen.html">Panels</a>
+        <a href="contactoen.html">Contact</a>
+    </nav>
+
+    <main class="gallery">
+    <section class="categorias">
+      <h2 class="nombre">🧩 Memory and Processors</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/OIP.ezixE1_ooOMbYDV0pV57EAHaHa?rs=1&pid=ImgDetMain" alt="RAM">
+            <p>Memory</p>
+          </div>
+          <div class="back">
+            <p>Devices that store data and instructions used by a computer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/OIP.ezixE1_ooOMbYDV0pV57EAHaHa?rs=1&pid=ImgDetMain" alt="Memorias RAM">
+            <p>RAM memory</p>
+          </div>
+          <div class="back">
+            <p>RAM memory helps improve the system's performance.</p>
+            <a href="memoriasen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/d2GCDBY6NBWMBXHP" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/06/procesador-intel-core-2383049.jpg?tf=3840x" alt="Memorias RAM">
+            <p>Processors</p>
+          </div>
+          <div class="back">
+            <p>Processors execute instructions and control everything the computer does.</p>
+            <a href="procesadoresen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/d2GCDBY6NBWMBXHP" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">🧠 Motherboard and Heatsink</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://hardzone.es/app/uploads-hardzone.es/2019/09/Placa-base-01.jpg" alt="RAM">
+            <p>Motherboard</p>
+          </div>
+          <div class="back">
+            <p>It is the main component of a computer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://hardzone.es/app/uploads-hardzone.es/2019/09/Placa-base-01.jpg" alt="Memorias RAM">
+            <p>Motherboard (types)</p>
+          </div>
+          <div class="back">
+            <p>Connects all the computer components, such as the processor, memory, and peripherals, allowing them to work together.</p>
+            <a href="placabaseen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/vJ3dDLFRTp6Dp5qq?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/R.89126007d0895eb6c3497280b17ca037?rik=E2hLss%2f0RI%2bI%2fg&pid=ImgRaw&r=0" alt="Memorias RAM">
+            <p>Heatsink</p>
+          </div>
+          <div class="back">
+            <p>A component that helps keep the processor or graphics card at a safe temperature by absorbing and dispersing the heat generated.</p>
+            <a href="disipadoren.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/S9dnakLOaAVD8uUj?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">🎮 Expansion cards</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/R.e40afb82d23aca04c94aa896ce01dedb?rik=tSijC0mOo8qbrg&pid=ImgRaw&r=0" alt="RAM">
+            <p>Graphics cards</p>
+          </div>
+          <div class="back">
+            <p>Process and render the images you see on the screen, improving the computer’s visual performance, especially in games and design applications.</p>
+            <a href="tarjetasgraficasen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/RMtXln6Yaor0y9Xx?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81M2XqnhEeL._AC_SL1500_.jpg" alt="Memorias RAM">
+            <p>Network cards</p>
+          </div>
+          <div class="back">
+            <p>Allow the computer to connect to a network, whether local (LAN) or the Internet, enabling communication between devices.</p>
+            <a href="tarjetasreden.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/K5FPAtsGmXZEk7pE?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71mULYdFxvL._AC_SL1500_.jpg" alt="Memorias RAM">
+            <p>Sounds cards</p>
+          </div>
+          <div class="back">
+            <p>Process audio in the computer, allowing you to play and record sound with better quality than integrated chips.</p>
+            <a href="tarjetasaudioen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/K5FPAtsGmXZEk7pE?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">🌐 Connectivity and Networks</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366947_sd.jpg" alt="RAM">
+            <p>Router</p>
+          </div>
+          <div class="back">
+            <p>A device that distributes the Internet connection to multiple devices, either via cable or Wi-Fi.</p>
+            <a href="routeren.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/Tb1uIWSupREi4PIR?ref=Link&loc=mysways" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://www.dlink.com/uk/en/products/-/media/product-pages/dsl/2740r/dsl2740rb1images-lsideoobe.jpg" alt="Memorias RAM">
+            <p>Modem</p>
+          </div>
+          <div class="back">
+            <p>Converts the Internet signal from your provider into a signal that computers or devices can use to connect to the network.</p>
+            <a href="modemen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/JkQ0JY1v73HAQr6Q?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/OIP.AZU3xXlzfzwocu_r86KsNgHaHa?rs=1&pid=ImgDetMain" alt="Memorias RAM">
+            <p>Network adapter</p>
+          </div>
+          <div class="back">
+            <p>Allows a device, like a computer, to connect to a network, either via cable (Ethernet) or wirelessly (Wi-Fi).</p>
+            <a href="tarjetasreden.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/JkQ0JY1v73HAQr6Q?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">📂 Storage</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/R.b58bac70db47f167a6ba1cc7a091f17c?rik=cwMoOqc6DLjBUg&pid=ImgRaw&r=0" alt="RAM">
+            <p>Floppy Disks</p>
+          </div>
+          <div class="back">
+            <p>A portable, magnetic storage medium used to store files and programs on old computers.</p>
+
+            <a href="https://sway.cloud.microsoft/JkQ0JY1v73HAQr6Q?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://bloygo.yoigo.com/embed/d34d1e7743f211e54e4e0f10947d1579530110/2019-Julio-Fotos-SEO-save-files-online.jpg" alt="Memorias RAM">
+            <p>Storage</p>
+          </div>
+          <div class="back">
+            <p>Devices and systems used to store and retrieve data.</p>
+            <a href="almacenamientoen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/JkQ0JY1v73HAQr6Q?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/OIP.LvSR1Wjo7djMKF4P-Rdp6AHaE8?rs=1&pid=ImgDetMain" alt="Memorias RAM">
+            <p>Floppy drive</p>
+          </div>
+          <div class="back">
+            <p>A device used to read and write data to floppy disks, a magnetic storage medium.</p>
+            <a href="disqueteraen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/ntca1feClzlvYhkK?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2 class="nombre">🔌 Peripherals and Connectors</h2>
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/OIP.maKvlo9mCtNgjfq4VNPiTwHaE7?rs=1&pid=ImgDetMain" alt="RAM">
+            <p>Cables</p>
+          </div>
+          <div class="back">
+            <p>Used to connect various devices, such as computers, printers, monitors, and other peripherals.</p>
+            <a href="cablesen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/HcbgZ10sB3JqM2MC?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/R.b5290d7501f2dd07a33d601d418b536a?rik=dkj%2bbMiH3GPjtQ&pid=ImgRaw&r=0" alt="Memorias RAM">
+            <p>Connectors</p>
+          </div>
+          <div class="back">
+            <p>In computing and electronics, these are components that join cables or devices to transmit electrical, data, or power signals.</p>
+            <a href="conectoresen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://sway.cloud.microsoft/HcbgZ10sB3JqM2MC?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="https://th.bing.com/th/id/OIP.rNTEQUB9hppT2Dk2gItFZgHaFj?rs=1&pid=ImgDetMain" alt="Memorias RAM">
+            <p>Peripherals</p>
+          </div>
+          <div class="back">
+            <p>External devices that connect to a computer or computing system to expand or improve its functionality.</p>
+            <a href="perifericosen.html" target="_blank" class="more-info">Types</a>
+            <a href="https://neu-www.sway.com/ja8VwrOFPDGGqhy9" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="pie">
+                <b>Name: </b>Grupo Sorolla Education<br>
+                <b>Location: </b>Carr. de Malilla, 47, Quatre Carreres, 46026 Valencia
+            </span>
+            <img class="logo" src="logoeps.png" alt="EPS Logo" />
+        </div>
+    </footer>
+
+  <script src="scripten.js"></script>
+
+
+</body>
+</html>

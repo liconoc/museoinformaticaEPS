@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="componentes">
+
+    <div class="top-bar">
+        <div class="contenedor-header">
+            <div class="contenido-header">
+                <div class="logo-header">
+                    <img src="https://www.profesionalsorolla.es/wp-content/uploads/2021/05/logo_ense_profesio_sorolla1.jpg" alt="Museum logo" />
+                </div>           
+            </div>
+        </div>
+        <div class="texto-header">
+            <div>
+                <span class="oscuro">C</span><span class="claro">o</span><span class="oscuro">m</span><span class="claro">p</span><span class="oscuro">u</span><span class="claro">t</span><span class="oscuro">e</span><span class="claro">r</span>
+                <span> </span>
+                <span class="claro">M</span><span class="oscuro">u</span><span class="claro">s</span><span class="oscuro">e</span><span class="claro">u</span><span class="oscuro">m</span>
+                <span> </span>
+                <span class="oscuro">E</span><span class="claro">P</span><span class="oscuro">S</span>
+            </div>
+        </div>
+        <div class="info-derecha">   
+            <div class="buscar">
+                <input id="search-input" type="text" placeholder="Search" />
+                <button id="clear-btn" style="display: none">❌</button>
+                <button id="search-btn">Search</button>
+            </div> 
+        <div class="idiomas">
+            Language:
+                <img src="https://flagcdn.com/16x12/es.png" alt="Spanish">
+                <img src="https://www.bandiere.it/uploads/2016-6-6/1200-0/valencia.jpg" alt="Valencian">
+                <img src="https://flagcdn.com/16x12/gb.png" alt="English">
+        </div>
+        <div class="redes-sociales">
+            Follow us:
+            <a href="hhttps://www.facebook.com/ProfesionalSorolla">
+              <img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" class="img-icon">
+            </a>
+            <a href="https://www.instagram.com/profesionalsorolla/">
+              <img src="https://c0.klipartz.com/pngpicture/722/1011/gratis-png-icono-de-logo-logo-de-instagram-logo-de-instagram.png" class="img-icon">
+            </a>
+        </div>
+    </div>
+ </div>
+  <main class="gallery">
+    <section class="categorias">
+      
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="tarjetasdiscretas.jpg" alt="Memorias RAM">
+            <p>Discrete graphics cards</p>
+          </div>
+          <div class="back">
+            <p>These are independent cards installed on the motherboard, offering much more powerful graphics performance than integrated ones.</p>
+            <a href="https://sway.cloud.microsoft/qQrO1KoXOXrANoub?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="tarjetasintegradas.jpg" alt="Memorias RAM">
+            <p>Integrated graphics cards</p>
+          </div>
+          <div class="back">
+            <p>They are built into the processor or motherboard, sharing resources with other components, making them more affordable but less powerful than discrete ones.</p>
+            <a href="https://sway.cloud.microsoft/qQrO1KoXOXrANoub?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="tarjetaasus.jpg" alt="Memorias RAM">
+            <p>Asus EAH4350 graphics card</p>
+          </div>
+          <div class="back">
+            <p>A low-end discrete card, designed for basic tasks like browsing and watching videos, with modest gaming performance.</p>
+            <a href="https://sway.cloud.microsoft/qQrO1KoXOXrANoub?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="tarjetanvidia.jpg" alt="Memorias RAM">
+            <p>NVIDIA Riva TNT2 M64 graphics card</p>
+          </div>
+          <div class="back">
+            <p>An old mid-range card used in its time for games and 3D graphics, offering good performance for games from the 1990s and early 2000s.</p>
+            <a href="https://sway.cloud.microsoft/qQrO1KoXOXrANoub?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="tarjetamda.jpg" alt="Memorias RAM">
+            <p>MDA Video Card with Hitachi HD6845</p>
+          </div>
+          <div class="back">
+            <p>An old card used in early PCs, mainly designed for text and basic graphics, without support for color graphics or advanced games.</p>
+            <a href="https://sway.cloud.microsoft/qQrO1KoXOXrANoub?ref=Link" target="_blank" class="more-info">More information</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="pie">
+                <b>Name: </b>Grupo Sorolla Educación<br>
+                <b>Location: </b>Carr. de Malilla, 47, Quatre Carreres, 46026 Valencia
+            </span>
+            <img class="logo" src="logoeps.png" alt="EPS Logo" />
+        </div>
+    </footer>
+
+  <a href="categoriasen.html" class="flecha">⬅️</a>
+
+</body>
+</html>

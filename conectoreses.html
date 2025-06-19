@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="componentes">
+
+  <div class="top-bar">
+        <div class="contenedor-header">
+            <!-- Agrupamos logo + texto -->
+            <div class="contenido-header">
+              <!-- Logo al inicio -->
+              <div class="logo-header">
+                <img src="https://www.profesionalsorolla.es/wp-content/uploads/2021/05/logo_ense_profesio_sorolla1.jpg" alt="Logo del museo" />
+              </div>           
+            </div>
+        </div>
+        <div class="texto-header">
+            <div>
+                <span class="oscuro">M</span><span class="claro">u</span><span class="oscuro">s</span><span class="claro">e</span><span class="oscuro">o</span>
+                <span> </span>
+                <span class="claro">d</span><span class="oscuro">e</span>
+                
+                <span> </span>
+                <span class="claro">i</span><span class="oscuro">n</span><span class="claro">f</span><span class="oscuro">o</span><span class="claro">r</span><span class="oscuro">m</span><span class="claro">á</span><span class="oscuro">t</span><span class="claro">i</span><span class="oscuro">c</span><span class="claro">a</span>
+                <span> </span>
+                <span class="oscuro">E</span><span class="claro">P</span><span class="oscuro">S</span>
+            </div>
+        </div>
+        <div class="info-derecha">   
+          <div class="buscar">
+              <input id="search-input" type="text" placeholder="Búsqueda" />
+              <button id="clear-btn" style="display: none">❌</button> <!-- Botón para borrar el texto -->
+              <button id="search-btn">Buscar</button> <!-- Botón para hacer la búsqueda -->
+          </div>
+            <div class="idiomas">
+                Idioma:
+                    <img
+                    src="https://flagcdn.com/16x12/es.png"
+                    srcset="https://flagcdn.com/32x24/es.png 2x,
+                    https://flagcdn.com/48x36/es.png 3x"
+                    width="16"
+                    height="12"
+                    alt="Spain">
+                    <img src="https://www.bandiere.it/uploads/2016-6-6/1200-0/valencia.jpg" alt="Valencià">
+                    <img
+                    src="https://flagcdn.com/16x12/gb.png"
+                    srcset="https://flagcdn.com/32x24/gb.png 2x,
+                    https://flagcdn.com/48x36/gb.png 3x"
+                    width="16"
+                    height="12"
+                    alt="United Kingdom">
+            </div>
+            <div class="redes-sociales">
+                Síguenos:
+                <a href="https://www.facebook.com/ProfesionalSorolla">
+                  <img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" class="img-icon">
+                </a>
+                <a href="https://www.instagram.com/profesionalsorolla/">
+                  <img src="https://c0.klipartz.com/pngpicture/722/1011/gratis-png-icono-de-logo-logo-de-instagram-logo-de-instagram.png" class="img-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="top-nav">
+        <a href="inicioes.html">Inicio</a>
+        <a href="historiaes.html">Historia</a>
+        <a href="visitaes.html">Visita global</a>
+        <a href="categoriases.html">Categorías</a>
+        <a href="cuadroses.html">Cuadros</a>
+        <a href="contactoes.html">Contacto</a>
+    </nav>
+
+  <main class="gallery">
+    <section class="categorias">
+      
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="conectortelefono.jpg" alt="RAM">
+            <p>Conector de teléfono</p>
+          </div>
+          <div class="back">
+            <p>Es un tipo de conector utilizado principalmente para las conexiones telefónicas.</p>
+            <a href="https://sway.cloud.microsoft/HcbgZ10sB3JqM2MC?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="conectorethernet.jpg" alt="RAM">
+            <p>Conector ethernet</p>
+          </div>
+          <div class="back">
+            <p>Es un tipo de conector utilizado para las conexiones de red en computadoras, routers, switches y otros dispositivos de telecomunicaciones.</p>
+            <a href="https://sway.cloud.microsoft/HcbgZ10sB3JqM2MC?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="conectorantena.jpg" alt="RAM">
+            <p>Conector de antena</p>
+          </div>
+          <div class="back">
+            <p>Es un tipo de conector utilizado para conectar una antena a un dispositivo, como una televisión, un router o un receptor de radio.</p>
+            <a href="https://sway.cloud.microsoft/HcbgZ10sB3JqM2MC?ref=Link" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="conectorrj45.jpg" alt="RAM">
+            <p>Conector de RJ-45</p>
+          </div>
+          <div class="back">
+            <p>Es un tipo de conector utilizado principalmente en redes Ethernet para transmitir datos entre dispositivos como computadoras, routers, switches y otros equipos de red.</p>
+            <a href="https://neu-www.sway.com/ja8VwrOFPDGGqhy9" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="conectorps2.jpg" alt="RAM">
+            <p>Conector PS/2</p>
+          </div>
+          <div class="back">
+            <p>Es un tipo de conector de 6 pines utilizado principalmente para conectar dispositivos de entrada como teclados y ratones a computadoras.</p>
+            <a href="https://neu-www.sway.com/ja8VwrOFPDGGqhy9" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="conectorpuertos.jpg" alt="RAM">
+            <p>Conector de puertos paralelos</p>
+          </div>
+          <div class="back">
+            <p>Es un tipo de conector utilizado para la transmisión de datos entre computadoras y dispositivos periféricos, como impresoras, mediante un bus de datos paralelo.</p>
+            <a href="https://neu-www.sway.com/ja8VwrOFPDGGqhy9" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <a href="categoriases.html" class="flecha">⬅️</a>
+
+</body>
+</html>

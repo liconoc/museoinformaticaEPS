@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="componentes">
+
+    <div class="top-bar">
+        <div class="contenedor-header">
+            <!-- Agrupamos logo + texto -->
+            <div class="contenido-header">
+              <!-- Logo al inicio -->
+              <div class="logo-header">
+                <img src="https://www.profesionalsorolla.es/wp-content/uploads/2021/05/logo_ense_profesio_sorolla1.jpg" alt="Logo del museo" />
+              </div>           
+            </div>
+        </div>
+        <div class="texto-header">
+            <div>
+                <span class="oscuro">M</span><span class="claro">u</span><span class="oscuro">s</span><span class="claro">e</span><span class="oscuro">o</span>
+                <span> </span>
+                <span class="claro">d</span><span class="oscuro">e</span>
+                
+                <span> </span>
+                <span class="claro">i</span><span class="oscuro">n</span><span class="claro">f</span><span class="oscuro">o</span><span class="claro">r</span><span class="oscuro">m</span><span class="claro">á</span><span class="oscuro">t</span><span class="claro">i</span><span class="oscuro">c</span><span class="claro">a</span>
+                <span> </span>
+                <span class="oscuro">E</span><span class="claro">P</span><span class="oscuro">S</span>
+            </div>
+        </div>
+        <div class="info-derecha">   
+            <div class="buscar">
+                <input id="search-input" type="text" placeholder="Búsqueda" />
+                <button id="clear-btn" style="display: none">❌</button> <!-- Botón para borrar el texto -->
+                <button id="search-btn">Buscar</button> <!-- Botón para hacer la búsqueda -->
+            </div>            
+            <div class="idiomas">
+              Idioma:
+              <img id="spanish-flag" src="https://flagcdn.com/16x12/es.png" alt="Español" width="16" height="12">
+              <img id="valencia-flag" src="https://www.bandiere.it/uploads/2016-6-6/1200-0/valencia.jpg" alt="Valencià" width="16" height="12">
+              <img id="english-flag" src="https://flagcdn.com/16x12/gb.png" alt="English" width="16" height="12">
+            </div>
+            <div class="redes-sociales">
+                Síguenos:
+                <a href="https://www.facebook.com/ProfesionalSorolla">
+                  <img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" class="img-icon">
+                </a>
+                <a href="https://www.instagram.com/profesionalsorolla/">
+                  <img src="https://c0.klipartz.com/pngpicture/722/1011/gratis-png-icono-de-logo-logo-de-instagram-logo-de-instagram.png" class="img-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+  <main class="gallery">
+    <section class="categorias">
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="ram.jpg" alt="RAM">
+            <p>RAM</p>
+          </div>
+          <div class="back">
+            <p>Almacena datos temporales para agilizar procesos.</p>
+            <a href="https://sway.cloud.microsoft/d2GCDBY6NBWMBXHP" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="zilog.jpg" alt="Memorias RAM">
+            <p>Zilog</p>
+          </div>
+          <div class="back">
+            <p>Guarda datos e instrucciones que usa el procesador Zilog para funcionar.</p>
+            <a href="https://sway.cloud.microsoft/gP2vAXR8nlh3FWdF?ref=Link&loc=play" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="kingstone.webp" alt="Memorias RAM">
+            <p>Kingstone</p>
+          </div>
+          <div class="back">
+            <p>Almacena datos temporales para que la computadora funcione más rápido.</p>
+            <a href="https://sway.cloud.microsoft/gP2vAXR8nlh3FWdF?ref=Link&loc=play" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="franja" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+          <div class="front">
+            <img src="crucial.webp" alt="Memorias RAM">
+            <p>Crucial</p>
+          </div>
+          <div class="back">
+            <p>Ayuda a que la computadora funcione rápido al guardar datos temporales.</p>
+            <a href="https://sway.cloud.microsoft/gP2vAXR8nlh3FWdF?ref=Link&loc=play" target="_blank" class="more-info">Más información</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <a href="categoriases.html" class="flecha">⬅️</a>
+
+    <footer id="pagina">
+        <div class="footer-content">
+            <span class="pie">
+                <b>Nombre: </b>Grupo Sorolla Educación<br>
+                <b>Ubicación: </b>Carr. de Malilla, 47, Quatre Carreres, 46026 Valencia
+            </span>
+            <img class="logo" src="logoeps.png" alt="Logo EPS" />
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museo de Informática EPS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inicio">
+
+    <div class="top-bar">
+        <div class="contenedor-header">
+            <!-- Agrupamos logo + texto -->
+            <div class="contenido-header">
+              <!-- Logo al inicio -->
+              <div class="logo-header">
+                <img src="https://www.profesionalsorolla.es/wp-content/uploads/2021/05/logo_ense_profesio_sorolla1.jpg" alt="Logo del museo" />
+              </div>           
+            </div>
+        </div>
+        <div class="texto-header">
+            <div>
+                <span class="oscuro">M</span><span class="claro">u</span><span class="oscuro">s</span><span class="claro">e</span><span class="oscuro">o</span>
+                <span> </span>
+                <span class="claro">d</span><span class="oscuro">e</span>
+                
+                <span> </span>
+                <span class="claro">i</span><span class="oscuro">n</span><span class="claro">f</span><span class="oscuro">o</span><span class="claro">r</span><span class="oscuro">m</span><span class="claro">á</span><span class="oscuro">t</span><span class="claro">i</span><span class="oscuro">c</span><span class="claro">a</span>
+                <span> </span>
+                <span class="oscuro">E</span><span class="claro">P</span><span class="oscuro">S</span>
+            </div>
+        </div>
+        <div class="info-derecha">   
+            <div class="buscar">
+                <input id="search-input" type="text" placeholder="Búsqueda" />
+                <button id="clear-btn" style="display: none">❌</button> <!-- Botón para borrar el texto -->
+                <button id="search-btn">Buscar</button> <!-- Botón para hacer la búsqueda -->
+            </div>            
+            <div class="idiomas">
+              Idioma:
+              <img id="spanish-flag" src="https://flagcdn.com/16x12/es.png" alt="Español" width="16" height="12">
+              <img id="valencia-flag" src="https://www.bandiere.it/uploads/2016-6-6/1200-0/valencia.jpg" alt="Valencià" width="16" height="12">
+              <img id="english-flag" src="https://flagcdn.com/16x12/gb.png" alt="English" width="16" height="12">
+            </div>
+            <div class="redes-sociales">
+                Síguenos:
+                <a href="https://www.facebook.com/ProfesionalSorolla">
+                  <img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" class="img-icon">
+                </a>
+                <a href="https://www.instagram.com/profesionalsorolla/">
+                  <img src="https://c0.klipartz.com/pngpicture/722/1011/gratis-png-icono-de-logo-logo-de-instagram-logo-de-instagram.png" class="img-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+  <!-- Menú -->
+    <nav class="top-nav">
+        <a href="inicioes.html">Inicio</a>
+        <a href="historiaes.html">Historia</a>
+        <a href="visitaes.html">Visita global</a>
+        <a href="categoriases.html">Categorías</a>
+        <a href="cuadroses.html">Cuadros</a>
+        <a href="contactoes.html">Contacto</a>
+    </nav>
+
+    <main>
+        <section class="bienvenida">
+            <h2 id="titulo">¡Bienvenido al museo de informática EPS!</h2>
+            <p id="descripcion">
+                Explora la evolución de la tecnología a través de nuestros componentes digitales. 
+                Cada código QR te llevará a una pieza única de historia informática. 
+                ¡Haz clic y descubre el alma de cada componente!
+            </p>
+            <p id="texto">
+                <img class="imagen-ajustada" src="https://img.freepik.com/vector-premium/coleccion-componentes-computadora-dibujada-mano_341841-995.jpg?w=2000">
+            </p>
+        </section>
+    </main>
+
+    <footer id="pagina">
+        <div class="footer-content">
+            <span class="pie">
+                <b>Nombre: </b>Grupo Sorolla Educación<br>
+                <b>Ubicación: </b>Carr. de Malilla, 47, Quatre Carreres, 46026 Valencia
+            </span>
+            <img class="logo" src="logoeps.png" alt="Logo EPS" />
+        </div>
+    </footer>
+      
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+      <p>Este sitio usa cookies para mejorar tu experiencia.
+        <button id="accept-cookies">Aceptar</button>
+        <button id="reject-cookies">Rechazar</button>
+      </p>
+    </div>
+    
+      
+      
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const banner = document.getElementById("cookie-banner");
+        const acceptBtn = document.getElementById("accept-cookies");
+        const rejectBtn = document.getElementById("reject-cookies");
+      
+        // Mostrar solo si no hay decisión guardada
+        const decision = localStorage.getItem("cookiesDecision");
+      
+        if (!decision) {
+          banner.style.display = "flex";
+          banner.style.animation = "slideUp 0.5s ease-out forwards";
+        }
+      
+        const hideBanner = () => {
+          banner.style.animation = "slideDown 0.5s ease-in forwards";
+          setTimeout(() => {
+            banner.style.display = "none";
+          }, 500);
+        };
+      
+        acceptBtn.addEventListener("click", () => {
+          localStorage.setItem("cookiesDecision", "accepted");
+          hideBanner();
+        });
+      
+        rejectBtn.addEventListener("click", () => {
+          localStorage.setItem("cookiesDecision", "rejected");
+          hideBanner();
+        });
+      });
+      </script>  
+      
+  <div class="idiomas">
+    Idioma:
+    <img id="lang-es" src="https://flagcdn.com/16x12/es.png" width="16" height="12" alt="Español">
+    <img id="lang-va" src="https://www.bandiere.it/uploads/2016-6-6/1200-0/valencia.jpg" width="16" height="12" alt="Valencià">
+    <img id="lang-en" src="https://flagcdn.com/16x12/gb.png" width="16" height="12" alt="English">
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const langMap = {
+        "es": "es",
+        "va": "va",
+        "en": "en"
+    };
+
+    const currentPage = location.pathname.split("/").pop(); // ejemplo: categoriases.html
+    const baseName = currentPage.replace(/(es|va|en)\.html$/, ""); // ejemplo: categorias
+
+    for (const lang in langMap) {
+        const btn = document.getElementById(`lang-${lang}`);
+        if (btn) {
+            btn.style.cursor = "pointer";
+            btn.addEventListener("click", () => {
+                window.location.href = `/${lang}/${baseName}${lang}.html`;
+            });
+        }
+    }
+});
+</script>
+
+      
+      <script src="scriptes.js"></script>
+
+</body>
+</html>
